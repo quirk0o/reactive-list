@@ -1,0 +1,27 @@
+html, body, #root {
+  overflow: hidden;
+}
+
+.root {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: min-content auto;
+  overflow: hidden;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list {
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.item:last-child {
+  margin-bottom: 100vh;
+}

@@ -1,0 +1,14 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+import { AnchoredList } from "../components/anchored-list.tsx";
+
+<Meta title="MDX/List" component={AnchoredList} />
+
+# Anchored List
+
+export const Template = (args) => <AnchoredList {...args} />;
+
+<Canvas>
+  <Story name="List">
+    {Template.bind({})}
+  </Story>
+</Canvas>
